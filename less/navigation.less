@@ -2,13 +2,17 @@
 
 @media @mobile{
     header{
-      color: red;
       display: flex;
       flex-direction: column;
       padding: @mediumPadding;
       }
       header nav{
           display:block !important;
+          justify-content: space-between;
+
+         /* display: flex;
+          flex-direction:row;
+          */
   
         }
         .welcome{
@@ -16,21 +20,28 @@
         }
     
       .content-section{
+          display: flex;
           flex-direction: column;
           align-content: center;
          
 
           .text-content{
               flex-direction: column;
-              padding: 20px;
-              width:100%;
+              
+              
           }
       }
       //.content-destination{
       //    flex-direction: column;
       //}
+      .section{
+          flex-direction: column;
+      }
       .content-pick{
           flex-direction: column;
+          justify-content: flex-end;
+          margin: 0 auto;
+          align-content: center;
          .destination{
              align-content: center;
              //text-align: center;

@@ -179,28 +179,36 @@ img {
 }
 @media (max-width: 500px) {
   header {
-    color: red;
     display: flex;
     flex-direction: column;
     padding: 1rem;
   }
   header nav {
     display: block !important;
+    justify-content: space-between;
+    /* display: flex;
+          flex-direction:row;
+          */
   }
   .welcome {
     flex-direction: column;
   }
   .content-section {
+    display: flex;
     flex-direction: column;
     align-content: center;
   }
   .content-section .text-content {
     flex-direction: column;
-    padding: 20px;
-    width: 100%;
+  }
+  .section {
+    flex-direction: column;
   }
   .content-pick {
     flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 auto;
+    align-content: center;
   }
   .content-pick .destination {
     align-content: center;
