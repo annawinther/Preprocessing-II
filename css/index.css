@@ -177,13 +177,41 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  header {
+    color: red;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  header nav {
+    display: block !important;
+  }
+  .welcome {
+    flex-direction: column;
+  }
+  .content-section {
+    flex-direction: column;
+    align-content: center;
+  }
+  .content-section .text-content {
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+  }
+  .content-pick {
+    flex-direction: column;
+  }
+  .content-pick .destination {
+    align-content: center;
+    justify-content: center;
+  }
+}
 header nav {
   display: flex;
   flex-direction: row;
-  font-size: 20px;
-  padding: 0px;
+  font-size: 2rem;
   margin: 30px 0;
-  vertical-align: bottom;
   border-bottom: 2px dashed #C0C0C0;
   border-width: 100%;
 }
@@ -279,4 +307,7 @@ header nav a {
 }
 :root {
   font-size: 60%;
+}
+@media (max-width: 500px) {
+  font-size: 100%;
 }

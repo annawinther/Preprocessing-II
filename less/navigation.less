@@ -1,12 +1,54 @@
 // Navigation Styles here
+
+@media @mobile{
+    header{
+      color: red;
+      display: flex;
+      flex-direction: column;
+      padding: @mediumPadding;
+      }
+      header nav{
+          display:block !important;
+  
+        }
+        .welcome{
+            flex-direction: column;
+        }
+    
+      .content-section{
+          flex-direction: column;
+          align-content: center;
+         
+
+          .text-content{
+              flex-direction: column;
+              padding: 20px;
+              width:100%;
+          }
+      }
+      //.content-destination{
+      //    flex-direction: column;
+      //}
+      .content-pick{
+          flex-direction: column;
+         .destination{
+             align-content: center;
+             //text-align: center;
+             justify-content: center;
+         }
+          
+          
+      }
+
+}
+
 header{
         nav{
             display: flex;
             flex-direction: row;
-            font-size: 20px;
-            padding: 0px;
+            font-size: @largeFontSize;
             margin: 30px 0;
-            vertical-align: bottom;
+            //vertical-align: bottom;
             border-bottom: 2px dashed @navigation-border;
             border-width: 100%;
 
@@ -32,5 +74,5 @@ header{
                 line-height:15px;
             }
         }
-
+        
 }
