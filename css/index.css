@@ -1,3 +1,12 @@
+.buttonParametric {
+  border-radius: 1rem;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -173,21 +182,30 @@ header nav {
   flex-direction: row;
   font-size: 20px;
   padding: 0px;
-  margin: 0 auto;
-  justify-content: space-between;
-  vertical-align: center;
+  margin: 30px 0;
+  vertical-align: bottom;
+  border-bottom: 2px dashed #C0C0C0;
+  border-width: 100%;
 }
 header nav h1 {
   text-align: left;
-  color: blue;
+  color: black;
+  margin: 30px 0;
+  padding: 20px;
+  height: 30px;
+  font-size: 3.5rem;
+  line-height: 15px;
 }
 header nav a {
+  justify-content: center;
+  text-align: right;
   margin: 20px;
+  padding: 30px;
   text-decoration: none;
   font-size: 15px;
-  color: red;
-  text-align: right;
-  vertical-align: right;
+  color: black;
+  height: 30px;
+  line-height: 15px;
 }
 .footer {
   width: 100%;
@@ -199,6 +217,10 @@ header nav a {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header .welcome {
+  margin: 30px 0;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .content-section {
   margin: 30px 0;
@@ -245,4 +267,16 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  border-radius: 1rem;
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+:root {
+  font-size: 60%;
 }
